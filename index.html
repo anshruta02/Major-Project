@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login & Registration Form</title>
+  <!---Custom CSS File--->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url("eeg1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const loginButton = document.querySelector('.login-button');
+      loginButton.addEventListener('click', () => {
+        window.location.href = 'home.html'; // Change 'home.html' to the actual file name of your home page
+      });
+
+      const signupButton = document.querySelector('.signup-button');
+      signupButton.addEventListener('click', () => {
+        const signupForm = document.querySelector('.signup form');
+        signupForm.action = 'index.html'; // Change 'login.html' to the actual file name of your login page
+        signupForm.method = 'post'; // Set the method to 'post' if you want to send data securely
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form action="#">
+        <input type="text" placeholder="Enter your email">
+        <input type="password" placeholder="Enter your password">
+        <a href="password.html">Forgot password?</a>
+        <input type="button" class="button login-button" value="Login">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label for="check">Sign Up</label>
+        </span>
+      </div>
+    </div>
+    <div class="registration form">
+      <header>Signup</header>
+      <form action="#" method="get">
+        <input type="text" placeholder="Enter your email">
+        <input type="password" placeholder="Create a password">
+        <input type="password" placeholder="Confirm your password">
+        <input type="submit" class="button signup-button" value="Signup">
+      </form>
+      <div class="signup">
+        <span class="signup">Already have an account?
+         <label for="check">Login</label>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

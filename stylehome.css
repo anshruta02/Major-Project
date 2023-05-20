@@ -1,0 +1,30 @@
+body {
+	background-color: #f169bf;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+nav a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+nav a:hover {
+	background-color: white;
+	color:#f169bf;
+}
